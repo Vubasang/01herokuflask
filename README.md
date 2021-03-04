@@ -1,2 +1,2 @@
 ## Ссылка:
-- [Ссылка](https://lab1-vu.herokuapp.com/)
+- https://lab01-vu.herokuapp.com/
