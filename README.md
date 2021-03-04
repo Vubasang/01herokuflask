@@ -1,2 +1,2 @@
 ## Ссылка:
-- https://lab01-vu.herokuapp.com/
+- https://lab01-vusang.herokuapp.com/
