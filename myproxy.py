@@ -22,6 +22,9 @@ def hello_world():
             msg = f"Не удалось загрузить {request.args.get('url')}"
         try:
             config = json.load(open('/config/config.json'))
+        except:
+            msg = f"Не удалось прочесть настройки из файла /config/config.json"
+        try:
             mysql_server = config['ip']
             cnx = mysql.connector.connect(user='myproxy@the-mysql', database='myproxy',
                                           host=mysql_server, password='1234zxcv')
