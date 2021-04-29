@@ -5,7 +5,7 @@ import requests
 import json
 import os
 from datetime import datetime
-import mysql.connector
+#import mysql.connector
 from flask import send_from_directory
 import glob
 import json
