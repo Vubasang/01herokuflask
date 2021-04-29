@@ -72,7 +72,7 @@ def upload_file():
 
             data_red = np.load('./db.npy')
 
-            img_blue = imgfn
+            img_blue = cv2.imread(imgfn)[:,:,::-1]
             v_blue = e.embed(img_blue)
 
             min_vector_difference = 2
