@@ -97,8 +97,7 @@ def upload_file():
             "recognition": [min_vector_image_name, min_vector_difference]
             }
 
-            return redirect(url_for('uploaded_file',
-                                    filename=x))
+            return x#redirect(url_for('uploaded_file',filename=x))
 
 
     return '''
