@@ -8,9 +8,9 @@ from datetime import datetime
 import mysql.connector
 from flask import send_from_directory
 import glob
-import tensorflow as tf, numpy as np
-import cv2
-import facenet
+#import tensorflow as tf, numpy as np
+#import cv2
+#import facenet
 
 UPLOAD_FOLDER = './images'
 ALLOWED_EXTENSIONS = set(['jpg', 'jpeg'])
@@ -47,7 +47,7 @@ def upload_file():
     '''
 
 if __name__ == '__main__':
-    sess = tf.Session()
+    '''sess = tf.Session()
 
     class Embedder:
         IMAGE_SIZE = 160
@@ -84,4 +84,5 @@ if __name__ == '__main__':
         b[i]=a
     np.save('db.npy', b, allow_pickle=False)
     sess.close()
+    '''
     app.run()
